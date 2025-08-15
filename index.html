@@ -1,0 +1,295 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Retro & MMORPG Podcast</title>
+  <meta name="description" content="A podcast diving into retro games and MMORPGs — episodes, show notes, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">  <!-- Tailwind CDN with plugins -->  <script src="https://cdn.tailwindcss.com?plugins=typography,forms,aspect-ratio"></script>  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            salmon: {
+              50: '#fff2ef',
+              100: '#ffe1db',
+              200: '#ffc3b8',
+              300: '#ffa092',
+              400: '#fb8e7e',
+              500: '#fa8072', // main salmon
+              600: '#e86f61',
+              700: '#c7594c',
+              800: '#9e463c',
+              900: '#7f3a33'
+            },
+            ink: '#0b0b0b'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Helvetica', 'Arial', 'Apple Color Emoji', 'Segoe UI Emoji']
+          },
+          boxShadow: {
+            glow: '0 0 0 3px rgba(250,128,114,0.35)'
+          }
+        }
+      }
+    }
+  </script>  <style>
+    html { scroll-behavior: smooth; }
+  </style></head>
+<body class="bg-ink text-white font-sans">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-ink/70 bg-ink/90 border-b border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#top" class="group flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-salmon-500 text-ink font-extrabold shadow-glow">
+            ▶
+          </span>
+          <span class="text-lg sm:text-xl font-bold tracking-tight">Retro & MMORPG Podcast</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#about" class="hover:text-salmon-300">About</a>
+          <a href="#podcast" class="hover:text-salmon-300">Listen</a>
+          <a href="#episodes" class="hover:text-salmon-300">Episodes</a>
+          <a href="#retro" class="hover:text-salmon-300">Retro</a>
+          <a href="#mmorpg" class="hover:text-salmon-300">MMORPGs</a>
+          <a href="#contact" class="hover:text-salmon-300">Contact</a>
+        </nav>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-lg p-2 ring-1 ring-white/15 hover:ring-white/30" aria-label="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 grid grid-cols-2 gap-3 text-sm">
+        <a href="#about" class="rounded-lg px-3 py-2 bg-white/5 hover:bg-white/10">About</a>
+        <a href="#podcast" class="rounded-lg px-3 py-2 bg-white/5 hover:bg-white/10">Listen</a>
+        <a href="#episodes" class="rounded-lg px-3 py-2 bg-white/5 hover:bg-white/10">Episodes</a>
+        <a href="#retro" class="rounded-lg px-3 py-2 bg-white/5 hover:bg-white/10">Retro</a>
+        <a href="#mmorpg" class="rounded-lg px-3 py-2 bg-white/5 hover:bg-white/10">MMORPGs</a>
+        <a href="#contact" class="rounded-lg px-3 py-2 bg-white/5 hover:bg-white/10">Contact</a>
+      </nav>
+    </div>
+  </header>  <!-- Hero -->  <section id="top" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 opacity-20" aria-hidden="true">
+      <div class="absolute -top-1/2 left-1/2 h-[80rem] w-[80rem] -translate-x-1/2 rounded-full bg-gradient-to-br from-salmon-500/60 to-pink-500/20 blur-3xl"></div>
+    </div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight tracking-tight">
+          Deep dives into <span class="text-salmon-400">retro classics</span> &
+          legendary <span class="text-salmon-400">MMORPGs</span>
+        </h1>
+        <p class="mt-6 text-lg text-white/80">
+          Weekly discussions, dev interviews, and nostalgia-fueled debates about the games that built our world
+        </p>
+        <div class="mt-10 flex flex-wrap items-center gap-4">
+          <a href="#podcast" class="inline-flex items-center gap-2 rounded-xl bg-salmon-500 px-5 py-3 font-semibold text-ink shadow-glow hover:bg-salmon-400">
+            Listen now
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10.75 3.5a.75.75 0 00-1.5 0v13a.75.75 0 001.5 0v-13zM4.5 7.25a.75.75 0 000 1.5h11a.75.75 0 000-1.5h-11z"/></svg>
+          </a>
+          <a href="#episodes" class="inline-flex items-center gap-2 rounded-xl px-5 py-3 ring-1 ring-white/15 hover:bg-white/5">
+            Browse episodes
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- About -->  <section id="about" class="py-16 sm:py-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-10 items-start">
+        <div class="lg:col-span-2">
+          <h2 class="text-3xl sm:text-4xl font-bold">About the show</h2>
+          <p class="mt-6 text-white/80 leading-relaxed">
+            We unpack retro gems from the 8-bit era to early 3D, and roam the worlds of classic and modern MMORPGs. Expect lore breakdowns, patch history, and the unfiltered opinions of lifelong players
+          </p>
+          <ul class="mt-6 space-y-3 text-white/80">
+            <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-salmon-500"></span><span>New episodes every week</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-salmon-500"></span><span>Show notes and links for every topic</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-salmon-500"></span><span>Requests welcome — we love deep cuts</span></li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <h3 class="font-semibold text-salmon-300">Quick links</h3>
+          <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+            <a href="#podcast" class="rounded-lg bg-salmon-500/10 px-3 py-2 hover:bg-salmon-500/20">Listen</a>
+            <a href="#episodes" class="rounded-lg bg-salmon-500/10 px-3 py-2 hover:bg-salmon-500/20">Episodes</a>
+            <a href="#retro" class="rounded-lg bg-salmon-500/10 px-3 py-2 hover:bg-salmon-500/20">Retro</a>
+            <a href="#mmorpg" class="rounded-lg bg-salmon-500/10 px-3 py-2 hover:bg-salmon-500/20">MMORPGs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Podcast Embed -->  <section id="podcast" class="py-16 sm:py-24 bg-white/5 border-y border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between flex-wrap gap-4">
+        <h2 class="text-3xl sm:text-4xl font-bold">Listen to the podcast</h2>
+        <p class="text-white/70 text-sm">Paste your own embed link below</p>
+      </div>
+      <div class="mt-6 grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <!-- Replace the src with your Spotify/Apple/Anchor embed URL -->
+          <div class="aspect-video rounded-2xl overflow-hidden ring-1 ring-white/10">
+            <iframe
+              class="h-full w-full"
+              src="https://open.spotify.com/embed/episode/0ofbQMrRDsUaVKq2mGLEo0?utm_source=generator"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        <div class="lg:col-span-1">
+          <label for="embedUrl" class="block text-sm font-medium text-white/90">Swap the embed</label>
+          <input id="embedUrl" type="url" placeholder="Paste an embed URL (Spotify, Apple, etc.)" class="mt-2 w-full rounded-lg bg-ink/70 border border-white/15 focus:border-salmon-400 focus:ring-salmon-400 placeholder-white/40" />
+          <button id="applyEmbed" class="mt-3 w-full rounded-lg bg-salmon-500 px-4 py-2 font-semibold text-ink shadow-glow hover:bg-salmon-400">Update player</button>
+          <p class="mt-3 text-xs text-white/60">Tip: use the platform's <span class="text-white/80">Share → Embed</span> link</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Episodes -->  <section id="episodes" class="py-16 sm:py-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between flex-wrap gap-4">
+        <h2 class="text-3xl sm:text-4xl font-bold">Latest episodes</h2>
+        <a href="#podcast" class="text-salmon-300 hover:text-salmon-200">Subscribe →</a>
+      </div>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Episode card template -->
+        <article class="group rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:bg-white/[0.08] transition">
+          <div class="aspect-video bg-gradient-to-br from-salmon-500/20 to-salmon-500/0"></div>
+          <div class="p-5">
+            <h3 class="font-semibold group-hover:text-salmon-300">#21 — The Golden Age of 16‑bit RPGs</h3>
+            <p class="mt-2 text-sm text-white/70">Chrono Trigger vs FFVI, systems that still hold up, and why mode‑7 felt like magic</p>
+            <div class="mt-4 flex items-center gap-3 text-xs text-white/60">
+              <span>58 min</span>
+              <span class="h-1 w-1 rounded-full bg-white/30"></span>
+              <span>Retro</span>
+            </div>
+          </div>
+        </article>
+        <article class="group rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:bg-white/[0.08] transition">
+          <div class="aspect-video bg-gradient-to-br from-salmon-500/20 to-salmon-500/0"></div>
+          <div class="p-5">
+            <h3 class="font-semibold group-hover:text-salmon-300">#20 — Patch Notes That Changed MMOs</h3>
+            <p class="mt-2 text-sm text-white/70">From WoW 1.12 to OSRS Revolutions: how updates reshape entire metas</p>
+            <div class="mt-4 flex items-center gap-3 text-xs text-white/60">
+              <span>1 hr 12 min</span>
+              <span class="h-1 w-1 rounded-full bg-white/30"></span>
+              <span>MMORPG</span>
+            </div>
+          </div>
+        </article>
+        <article class="group rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:bg-white/[0.08] transition">
+          <div class="aspect-video bg-gradient-to-br from-salmon-500/20 to-salmon-500/0"></div>
+          <div class="p-5">
+            <h3 class="font-semibold group-hover:text-salmon-300">#19 — Hidden Co‑op Gems</h3>
+            <p class="mt-2 text-sm text-white/70">Obscure couch‑co‑op titles worth revisiting with a friend this weekend</p>
+            <div class="mt-4 flex items-center gap-3 text-xs text-white/60">
+              <span>42 min</span>
+              <span class="h-1 w-1 rounded-full bg-white/30"></span>
+              <span>Retro</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>  <!-- Retro Section -->  <section id="retro" class="py-16 sm:py-24 bg-white/5 border-y border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold">Retro spotlights</h2>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-br from-salmon-500/5 to-transparent">
+          <h3 class="font-semibold">8‑bit to 16‑bit</h3>
+          <p class="mt-2 text-white/80 text-sm">Tight design, crunchy sound — why limitations made masterpieces</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-br from-salmon-500/5 to-transparent">
+          <h3 class="font-semibold">Arcade legends</h3>
+          <p class="mt-2 text-white/80 text-sm">Score chasers, beat ‘em ups, and the social vibe of real cabinets</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-br from-salmon-500/5 to-transparent">
+          <h3 class="font-semibold">Early 3D quirks</h3>
+          <p class="mt-2 text-white/80 text-sm">Tank controls and charm — clunky tech, unforgettable games</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- MMORPG Section -->  <section id="mmorpg" class="py-16 sm:py-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold">MMORPG worlds</h2>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl border border-white/10 p-6">
+          <h3 class="font-semibold">Classic servers</h3>
+          <p class="mt-2 text-white/80 text-sm">Vanilla, Season of Mastery, progression realms — why they matter</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 p-6">
+          <h3 class="font-semibold">Economies & metas</h3>
+          <p class="mt-2 text-white/80 text-sm">Player‑driven markets, patch cycles, and the art of theorycrafting</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 p-6">
+          <h3 class="font-semibold">Guild stories</h3>
+          <p class="mt-2 text-white/80 text-sm">Raids, rivalries, and that one loot drama we’ll never forget</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Contact / Newsletter -->  <section id="contact" class="py-16 sm:py-24 bg-white/5 border-y border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-bold">Stay in the loop</h2>
+          <p class="mt-4 text-white/80">Get new episodes and show notes straight to your inbox</p>
+          <form class="mt-6 grid sm:grid-cols-[1fr_auto] gap-3" action="mailto:example@example.com" method="post" enctype="text/plain">
+            <input required type="email" name="email" placeholder="you@example.com" class="w-full rounded-xl bg-ink/70 border border-white/15 focus:border-salmon-400 focus:ring-salmon-400 placeholder-white/40 px-4 py-3" />
+            <button class="rounded-xl bg-salmon-500 px-5 py-3 font-semibold text-ink shadow-glow hover:bg-salmon-400">Subscribe</button>
+          </form>
+          <p class="mt-3 text-xs text-white/60">Replace the <span class="text-white/80">mailto:</span> with your newsletter/ESP action</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 p-6">
+          <h3 class="font-semibold">Contact</h3>
+          <p class="mt-2 text-white/80 text-sm">For collabs, sponsorships, or topic requests:</p>
+          <ul class="mt-4 space-y-2 text-white/80 text-sm">
+            <li><span class="text-white/60">Email:</span> hello@yourshow.dev</li>
+            <li><span class="text-white/60">Twitter/X:</span> @yourshow</li>
+            <li><span class="text-white/60">Discord:</span> invite.gg/yourshow</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Footer -->  <footer class="py-10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/60">
+        <p>© <span id="year"></span> Retro & MMORPG Podcast</p>
+        <div class="flex items-center gap-4">
+          <a href="#top" class="hover:text-salmon-300">Back to top</a>
+          <a href="#contact" class="hover:text-salmon-300">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>  <script>
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Swap podcast embed
+    const embedInput = document.getElementById('embedUrl');
+    const applyEmbed = document.getElementById('applyEmbed');
+    const iframe = document.querySelector('#podcast iframe');
+    applyEmbed?.addEventListener('click', () => {
+      const url = embedInput.value.trim();
+      if (!url) return;
+      try {
+        // Basic sanity check to avoid loading non-embeds
+        const allowed = ['spotify.com', 'podcasts.apple.com', 'anchor.fm', 'youtube.com', 'youtube-nocookie.com', 'youtu.be'];
+        const u = new URL(url);
+        if (!allowed.some(h => u.host.includes(h))) {
+          alert('Please paste a valid podcast embed URL from Spotify, Apple, Anchor, or YouTube');
+          return;
+        }
+        iframe.src = url;
+      } catch (e) {
+        alert('That URL does not look valid');
+      }
+    });
+  </script></body>
+</html>
